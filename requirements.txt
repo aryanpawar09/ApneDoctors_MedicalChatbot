@@ -1,6 +1,6 @@
 streamlit==1.33.0
-langchain>=X.Y.Z  # Remove or update this pin to a version that supports langchain-core>=0.3.49
-langchain-community>=0.0.30  # or remove the fixed version if possible
+langchain==0.1.14
+langchain-community==0.0.24
 langchain-groq==0.3.2
 groq==0.5.0
 faiss-cpu==1.7.4

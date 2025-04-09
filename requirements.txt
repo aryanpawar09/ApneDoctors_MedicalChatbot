@@ -7,7 +7,9 @@ faiss-cpu
 sentence-transformers
 pypdf
 python-dotenv
-google-colab
+google-colab  
 streamlit
 requests
+torch
+transformers
 -e .

@@ -1,15 +1,13 @@
-
-langchain
-langchain-community
-langchain-groq
-groq
-faiss-cpu
-sentence-transformers
-pypdf
-python-dotenv
-google-colab  
-streamlit
-requests
-torch
-transformers
+streamlit==1.33.0
+langchain==0.1.14
+langchain-community==0.0.24
+langchain-groq==0.0.2
+groq==0.5.0
+faiss-cpu==1.7.4
+sentence-transformers==2.2.2
+pypdf==3.17.4
+python-dotenv==1.0.1
+requests==2.31.0
+torch==2.1.2
+transformers==4.39.3
 -e .

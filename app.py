@@ -54,4 +54,5 @@ if st.button("Send") and user_input:
     with st.spinner("Bot is thinking..."):
         response = qa({"query": user_input})
     st.session_state.chat_history.append(("bot", response["result"], current_time))
-    st.experimental_rerun()
+    st.rerun()
+

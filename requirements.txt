@@ -1,7 +1,7 @@
 streamlit==1.33.0
-langchain==0.1.14
-langchain-community==0.0.30
-langchain-core==0.1.53
+langchain>=0.1.16
+langchain-community>=0.0.35
+langchain-core>=0.3.49
 langchain-groq==0.3.2
 groq==0.5.0
 faiss-cpu==1.7.4
@@ -9,7 +9,3 @@ sentence-transformers==2.2.2
 pypdf==3.17.4
 python-dotenv==1.0.1
 requests==2.31.0
-markdown-it-py==3.0.0
-mdurl==0.1.2
-pygments==2.19.1
-rich==13.7.1  

@@ -48,7 +48,7 @@ st.markdown("""
         padding: 20px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         margin-bottom: 20px;
-        height: 60vh;
+        max-height: 400px;
         overflow-y: auto;
     }
 
@@ -119,6 +119,7 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
+
 
 # Centered container box
 st.markdown('<div class="container-box">', unsafe_allow_html=True)

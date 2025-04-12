@@ -145,17 +145,17 @@ qa = RetrievalQA.from_chain_type(
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-# Chat display
-st.markdown('<div class="chat-container">', unsafe_allow_html=True)
-if not st.session_state.chat_history:
-    st.markdown('<div style="text-align: center; color: #6c757d; margin-top: 25vh;">Ask me anything about medical topics!</div>', unsafe_allow_html=True)
-else:
+# Chat Display
+if st.session_state.chat_history:
+    st.markdown('<div class="chat-container">', unsafe_allow_html=True)
     for msg_type, text, timestamp in st.session_state.chat_history:
         if msg_type == "user":
             st.markdown(f'<div class="message-box user-msg"><strong>You:</strong> {text}<div class="timestamp">{timestamp}</div></div>', unsafe_allow_html=True)
         else:
             st.markdown(f'<div class="message-box bot-msg"><strong>Medical Assistant:</strong> {text}<div class="timestamp">{timestamp}</div></div>', unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+else:
+    st.markdown('<div style="text-align: center; color: #6c757d; margin-top: 25vh;">Ask me anything about medical topics!</div>', unsafe_allow_html=True)
 
 # Input section
 st.markdown('<div class="input-container">', unsafe_allow_html=True)

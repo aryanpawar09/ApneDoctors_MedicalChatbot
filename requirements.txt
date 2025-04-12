@@ -4,6 +4,7 @@ langchain-community>=0.0.35
 langchain-core>=0.3.49
 langchain-groq==0.3.2
 groq==0.5.0
+--find-links https://dl.fbaipublicfiles.com/faiss/wheel/faiss_cpu-1.7.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
 faiss-cpu==1.7.4
 sentence-transformers==2.2.2
 pypdf==3.17.4

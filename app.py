@@ -125,7 +125,7 @@ st.markdown("""
 st.markdown('<div class="container-box">', unsafe_allow_html=True)
 
 # Header
-st.markdown('<div class="title-container"><h1>🩺 Medical Assistant Chatbot</h1><p>Ask me any medical questions you have</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="title-container"><h1>🩺 ApneDoctors Chatbot</h1><p>Ask me any medical questions you have</p></div>', unsafe_allow_html=True)
 
 # Load model and vector store
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")

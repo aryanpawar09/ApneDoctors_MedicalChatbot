@@ -1,4 +1,4 @@
-# 🩺 Medical Assistant Chatbot
+# 🩺 ApneDoctors Chatbot
 
 A powerful AI-driven Medical Chatbot built with **LangChain**, **Groq's LLaMA 3 70B**, **FAISS**, and **Streamlit**. This chatbot helps users get instant responses to their medical queries using a custom-trained vector database of medical knowledge.
 
@@ -28,11 +28,6 @@ A powerful AI-driven Medical Chatbot built with **LangChain**, **Groq's LLaMA 3 
 
 ---
 
-## 📸 Screenshot
-
-Upload your screenshot image in the `assets/` folder and name it `screenshot.png`. Update the README if using a different name or location.
-
----
 
 ## 🧠 How It Works
 

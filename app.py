@@ -130,7 +130,7 @@ st.markdown('<div class="title-container"><h1>🩺 ApneDoctors Chatbot</h1><p>As
 # Load model and vector store
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-docsearch = FAISS.load_local("faiss_index2/", embeddings, allow_dangerous_deserialization=True)
+docsearch = FAISS.load_local("combined_index/", embeddings, allow_dangerous_deserialization=True)
 PROMPT = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
 chain_type_kwargs = {"prompt": PROMPT}
 llm = ChatGroq(model="llama3-70b-8192", api_key=GROQ_API_KEY)

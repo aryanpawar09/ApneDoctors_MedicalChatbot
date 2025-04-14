@@ -1,5 +1,5 @@
 from src.helper import load_pdf, text_split, download_hugging_face_embeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 import os
 
 # Step 1: Load data

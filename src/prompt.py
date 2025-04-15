@@ -6,6 +6,5 @@ Context: {context}
 Question: {question}
 
 Only return the helpful answer below and nothing else.
-If you detect any type of query has a specific language like Hindi, Marathi, you should be able to answer it in that particular language.
 Helpful answer:
 """

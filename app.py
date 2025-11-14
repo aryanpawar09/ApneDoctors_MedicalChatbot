@@ -133,7 +133,7 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 docsearch = FAISS.load_local("combined_index/", embeddings, allow_dangerous_deserialization=True)
 PROMPT = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
 chain_type_kwargs = {"prompt": PROMPT}
-llm = ChatGroq(model="llama3-70b-8192", api_key=GROQ_API_KEY)
+llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=GROQ_API_KEY)
 qa = RetrievalQA.from_chain_type(
     llm=llm,
     chain_type="stuff",
